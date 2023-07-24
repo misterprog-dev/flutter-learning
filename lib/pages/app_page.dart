@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../data/app_state.dart';
-import 'home.dart';
+import 'home_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         ),
-        home: Home(),
+        home: HomePage(),
       ),
     );
   }

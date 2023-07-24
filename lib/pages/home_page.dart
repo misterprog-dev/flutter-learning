@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'generator.dart';
+import 'favorites_page.dart';
+import 'generator_page.dart';
 
-class Home extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  State<Home> createState() => _HomeState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomeState extends State<Home> {
+class _HomePageState extends State<HomePage> {
   var selectedIndex = 0;
 
   @override
@@ -18,7 +19,7 @@ class _HomeState extends State<Home> {
         page = Generator();
         break;
       case 1:
-        page = Placeholder();
+        page = FavoritesPage();
         break;
       default:
         throw UnimplementedError('No widget for $selectedIndex');
